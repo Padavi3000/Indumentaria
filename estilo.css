@@ -1,0 +1,69 @@
+/* Indumentaria version 1.0 Beta (obvio que no es response ni nada*/
+/* Hice CSS provisorio pues el html sin formato se veia horrible!!! */
+
+
+/* Cabecera de la pagina es comun a todas, (incluye el logo y la barra de navegacion con 5 link) */
+#Cabecera {
+    border: 10px solid black;
+    display :flex;
+}
+
+#DivisionCabecera{    
+}
+
+#BarraNave{    
+}
+
+/* Logo que esta en la cabecera */
+#LogoImagen {    
+    width: 20%;
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+}
+
+/* Los links de la barra de navegacion de la cabecera los puse dentro de una lista (no estoy muy seguro*/
+#ListaLinkBarra {
+    display: flex;     
+    list-style: none;
+}
+
+/* Cada uno de los link que posee la barra de navegacion de la cabecera */
+.LinkCabecera {    
+    background: blue;
+    color: white;
+    padding: 2px;
+}
+
+/* Animacion que esta entre la cabecera y el cuerpo principal (solo en el index) */
+#animacion {
+    width: 100%;
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+}
+
+/* Titulo del cuerpo principal */
+.TituloMain {
+    text-align: center;
+}
+
+/* El Pie de pagina es comun a todas, (contiene 3 links) */
+#footer {
+    border: 10px solid black;
+}
+
+/* Link que posee el pie de pagina en su interior */
+.LinkFooter {
+    background: red;
+    color: white;
+}
+
+/* Da formato a las fotos de las prendas del cuerpo principal y a las prendas de promociones */
+.FotoPrenda {
+    width: 33%;
+}
+
+/* Da formato al mapas de Contacto */
+iframe {
+    display: flex;
+    width: 100%;
+}
