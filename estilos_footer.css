@@ -1,0 +1,63 @@
+/* Estilos para el footer */
+
+#footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.footer-links {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.contact-info {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.social-media {
+    float: left;
+    width: 30%;
+}
+
+.footer-links ul,
+.contact-info ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.contact-info ul li,
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links h3,
+.contact-info h3,
+.social-media h3 {
+    margin-top: 0;
+}
+
+.footer-links a,
+.contact-info a,
+.social-media a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links a:hover,
+.contact-info a:hover,
+.social-media a:hover {
+    color: #666;
+}
+
+/* Estilos para la sección de copyright */
+.copyright {
+    clear: both;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 0%;
+}
