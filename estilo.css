@@ -4,19 +4,17 @@
 
 /* Cabecera de la pagina es comun a todas, (incluye el logo y la barra de navegacion con 5 link) */
 #Cabecera {
-    border: 10px solid black;
-    display :flex;
+    display: flex;
+    font-family: montserrat;
 }
 
-#DivisionCabecera{    
-}
-
-#BarraNave{    
+#DivisionCabecera{
+    width: 10%;
 }
 
 /* Logo que esta en la cabecera */
-#LogoImagen {    
-    width: 20%;
+#LogoImagen {
+    width: 100%;
     height: auto;
     /* Para mantener la proporción de la imagen */
 }
@@ -25,36 +23,47 @@
 #ListaLinkBarra {
     display: flex;     
     list-style: none;
+    
 }
 
 /* Cada uno de los link que posee la barra de navegacion de la cabecera */
 .LinkCabecera {    
-    background: blue;
+    background: rosybrown;
     color: white;
-    padding: 2px;
+    padding: 10px;
 }
 
 /* Animacion que esta entre la cabecera y el cuerpo principal (solo en el index) */
 #animacion {
     width: 100%;
-    height: auto;
+    height: 10%;
+    grid-row: span 5;
     /* Para mantener la proporción de la imagen */
 }
 
 /* Titulo del cuerpo principal */
 .TituloMain {
     text-align: center;
+    font-family: montserrat;
+    size: 25px;
+    color: aliceblue;
+    border: 2px solid #bc8f8f;
+    background-color: rosybrown;
+
+
 }
 
 /* El Pie de pagina es comun a todas, (contiene 3 links) */
 #footer {
-    border: 10px solid black;
+    border: 2px solid rosybrown;
 }
 
 /* Link que posee el pie de pagina en su interior */
 .LinkFooter {
-    background: red;
-    color: white;
+   
+    color: royalblue;
+    font-family: montserrat;
+
 }
 
 /* Da formato a las fotos de las prendas del cuerpo principal y a las prendas de promociones */
@@ -67,3 +76,25 @@ iframe {
     display: flex;
     width: 100%;
 }
+
+h3 {
+    font-family: montserrat;
+}
+
+/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
+            pagina de productos pero no me salio,  sigue en css 
+
+.container{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.cajaColor{
+    background-image: linear-gradient(to top,blue 0%, pink 100%);
+    grid-column: 2/6;
+    grid-row: 2/7;
+} */
