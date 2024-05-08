@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda de Indumentaria</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Información de contacto</h2>
+            <p>Para contactarnos, utiliza la siguiente información:</p>
+            <ul>
+                <li><strong>Dirección:</strong> Calle Principal 123, Ciudad, País</li>
+                <li><strong>Teléfono:</strong> +123 456 7890</li>
+                <li><strong>Correo electrónico:</strong> <a href="mailto:info@tiendaindumentaria.com">info@tiendaindumentaria.com</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+ 
+    <footer id="footer">
+        <div class="container">
+            <!-- Otras secciones del pie de página -->
+            <div class="footer-links">
+                
+                <ul>
+                    <li><a href="./index_desplegable.html">Inicio</a></li>
+                    <!-- Otros enlaces útiles -->
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Tienda de Indumentaria. Todos los derechos reservados.</p>
+    </footer
+    
+</body>
+
+</html>
