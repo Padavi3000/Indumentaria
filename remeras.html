@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda_de_Moda</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+    <!-- Cabecera de la pagina, (incluye el logo y la barra de navegacion) -->
+    <header id="cabecera">
+
+        <!-- Logo de la tienda -->
+        <div id="divisionCabecera">
+            <a href="index.html" id="linkImagenCabecera">
+                <img id="logoImagen" src="img/logos/Logo.png" alt="Logo / Marca">
+            </a>
+        </div>
+
+        <!-- Barra de navegacion -->
+        <nav id="barraNave">
+            <ul id="listaLinkBarra">
+                <li>
+                    <a class="linkCabecera" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="buzos.html">Buzos</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="pantalones.html">Pantalones</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="remeras.html">Remeras</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor del carrito -->
+        <div id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_cursos">
+                    </div>
+                    <button id="vaciar_carrito">Vaciar Carrito</button>
+                </div>
+            </i>
+        </div>
+    </header>
+    <!-- fin del header y barra de navegacion -->
+
+    <!-- Index Cuerpo Principal -->
+    <main>
+        <h1 class="tituloMain"> REMERAS </h1>
+        <section class="seccionProductos" id="lista-cursos">
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/vestido1.jpeg" alt="Vestidos" title="Vestidos">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="1">Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/abrigo1.jpeg" alt="Abrigos" title="Abrigos">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="2">Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/calzado1.jpg" alt="Calzados" title="Calzados">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="3">Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/remera1.jpeg" alt="Remeras" title="Remeras">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="4">Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/pantalon1.jpeg" alt="Pantalones" title="Pantalones">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="5">Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="./fotos cuadradas/accesorios1.jpeg" alt="Acesorios" title="Acesorios">
+                <div class="info">
+                    <h3>Nomb Prenda</h3>
+                    <p>Descripcion</p>
+                    <p>Precio Anterior:</p>
+                    <div class="precio">
+                        <p>$30000</p>
+                        <p class="descuento">Ahora: $5000</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="6">Ver Mas</button>
+                </div>
+            </div>
+    </main>
+    <!-- fin Cuerpo Index -->
+
+    <!-- Comienzo del Footer -->
+    <footer id="footer">
+        <ul id="listaLinkFooter">
+            <li>
+                <a class="linkFooter" href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a class="linkFooter" href="./preguntas.html">Preguntas Frecuentes</a>
+            </li>
+            <li>
+                <a class="linkFooter" href="./contacto.html">Como Llegar</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Fin del Footer -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
