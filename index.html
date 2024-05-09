@@ -8,115 +8,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda_de_Moda</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" href="/TRABAJO FINAL/Indumentaria/fotos cuadradas/logos/logo.ico"> 
-    <!-- no me muestra el ico en la solapa de pagina (corregir)-->
-    
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
  
-
     <!-- Cabecera de la pagina, (incluye el logo y la barra de navegacion) -->
-    <header id="Cabecera">
+    <header id="cabecera">
 
         <!-- Logo de la tienda -->
-        <div id="DivisionCabecera">
-            <a href="./index.html" id="LinkImagenCabecera">
-                <img id="LogoImagen" src="./fotos cuadradas/logos/Logo de Nombre con Iniciales Tipográfico Circular Blanco y Negro (1).png" alt="Logo / Marca">
+        <div id="divisionCabecera">
+            <a href="index.html" id="linkImagenCabecera">
+                <img id="logoImagen" src="img/logos/Logo.png" alt="Logo / Marca">
             </a>
         </div>
 
         <!-- Barra de navegacion -->
-        <nav id="BarraNave">
-            <ul id="ListaLinkBarra">
+        <nav id="barraNave">
+            <ul id="listaLinkBarra">
                 <li>
-                    <a class="LinkCabecera" href="./productos.html">Productos</a>
+                    <a class="linkCabecera" href="index.html">Inicio</a>
                 </li>
                 <li>
-                    <a class="LinkCabecera" href="">Inicio</a>
+                    <a class="linkCabecera" href="buzos.html">Buzos</a>
                 </li>
                 <li>
-                    <a class="LinkCabecera" href="">Busqueda</a>
+                    <a class="linkCabecera" href="pantalones.html">Pantalones</a>
                 </li>
                 <li>
-                    <a class="LinkCabecera" href="">Carrito</a>
+                    <a class="linkCabecera" href="remeras.html">Remeras</a>
                 </li>
                 <li>
-                    <a class="LinkCabecera" href="./contacto.html">Contacto</a>
+                    <a class="linkCabecera" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
+        <!-- Contenedor del carrito -->
+        <div id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_cursos">
+                    </div>
+                    <button id="vaciar_carrito">Vaciar Carrito</button>
+                </div>
+            </i>
+        </div>
     </header>
     <!-- fin del header y barra de navegacion -->
 
     <!-- Animacion / Foto  -->
-    <div id="DivisionAnimacion">
-        <img id="animacion" src="./fotos cuadradas/Banner horizontal nueva colección minimalista y tipográfico beige.png" alt="animacion">
+    <div>
+        <img id="animacion" src="img/logos/Banner horizontal.png" alt="animacion">
     </div>
     <!-- fin Animacion / Foto -->
 
     <!-- Index Cuerpo Principal -->
     <main>
-    
-        <section id="SeccionProductos">
-            <h1 class="TituloMain"> PRODUCTOS </h1>
-            <div id="DivisionProductos">
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/vestido1.jpeg" alt="Vestidos" title="Vestidos">
-                </a>
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/abrigo1.jpeg" alt="Abrigos" title="Abrigos">
-                </a>
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/calzado1.jpg" alt="Calzados" title="Calzados">
-                </a>
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/remera1.jpeg" alt="Remeras" title="Remeras">
-                </a>
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/pantalon1.jpeg" alt="Pantalones" title="Pantalones">
-                </a>
-                <a href="./index.html">
-                    <img class="FotoPrenda" src="./fotos cuadradas/accesorios1.jpeg" alt="Acesorios" title="Acesorios">
-                </a>
+        <h1 class="tituloMain"> PRODUCTOS </h1>
+        <section class="seccionProductos" id="lista-cursos">
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/remeras/Remera.jpg" alt="Vestidos" title="Vestidos">
+                <div class="info">
+                    <h3>Remeras</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
             </div>
-
-            <!-- aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
-            pagina de productos pero no me salio,  sigue en css 
-           <div class= "container"></div>
-           <div class= "cajaColor" ></div>
-           <article>
-            <h1>PANTALONES</h1>
-            <p>Nueva coleccion.</p>
-        </article>
-        -->
-  
-                
-                
-               
-       
-      
-
-       
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/abrigos/Abrigo.jpg" alt="Abrigos" title="Abrigos">
+                <div class="info">
+                    <h3>Abrigos</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/accesorios/accesorios.jpg" alt="Calzados" title="Calzados">
+                <div class="info">
+                    <h3>Accesorios</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/pantalones/Pantalon.jpg" alt="Remeras" title="Remeras">
+                <div class="info">
+                    <h3>Pantalones</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/vestidos/vestido1.jpeg" alt="Pantalones" title="Pantalones">
+                <div class="info">
+                    <h3>Vestidos</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <img class="fotoPrenda" src="img/calzados/calzado1.jpg" alt="Acesorios" title="Acesorios">
+                <div class="info">
+                    <h3>Calzados</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <button>Ver Mas</button>
+                </div>
+            </div>
     </main>
     <!-- fin Cuerpo Index -->
 
     <!-- Comienzo del Footer -->
     <footer id="footer">
-        <ul id="ListaLinkFooter">
+        <ul id="listaLinkFooter">
             <li>
-                <a class="LinkFooter" href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
+                <a class="linkFooter" href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
             </li>
             <li>
-                <a class="LinkFooter" href="./preguntas.html">Preguntas Frecuentes</a>
+                <a class="linkFooter" href="preguntas.html">Preguntas Frecuentes</a>
             </li>
             <li>
-                <a class="LinkFooter" href="./contacto.html">Como Llegar</a>
+                <a class="linkFooter" href="contacto.html">Como Llegar</a>
             </li>
         </ul>
     </footer>
     <!-- Fin del Footer -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
