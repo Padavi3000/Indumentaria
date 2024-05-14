@@ -12,17 +12,17 @@
 <body>
 
     <!-- Cabecera de la pagina, (incluye el logo y la barra de navegacion) -->
-    <header id="cabecera">
+    <header class="cabecera">
        
         <!-- Logo de la tienda -->
-        <div id="divisionCabecera">
+        <div class="divisionCabecera">
             <a href="index.html" id="LinkImagenCabecera">
                 <img id="logoImagen" src="img/logos/Logo.png" alt="Logo / Marca">
             </a>
         </div>
 
         <!-- Barra de navegacion -->
-        <nav id="barraNave">
+        <nav class="barraNave">
             <ul id="listaLinkBarra">
                 <li>
                     <a class="linkCabecera" href="index.html">Inicio</a>
@@ -41,7 +41,23 @@
                 </li>
             </ul>
         </nav>
-        <i class="carrito"><img src="icons/carrito-compras.png" alt=""></i>
+        <!-- Contenedor del carrito -->
+        <div id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_cursos">
+                    </div>
+                    <button id="vaciar_carrito">Vaciar Carrito</button>
+                </div>
+            </i>
+        </div>
     </header>
     <!-- fin del header y barra de navegacion -->
 
