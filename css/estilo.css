@@ -1,19 +1,15 @@
-/* Indumentaria version 1.0 Beta (obvio que no es response ni nada*/
-/* Hice CSS provisorio pues el html sin formato se veia horrible!!! */
-
-/* Cabecera de la pagina es comun a todas, (incluye el logo y la barra de navegacion con 5 link) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#cabecera {
+.cabecera {
   display: flex;
   font-family: montserrat;
 }
 
-#cabecera i{
+.cabecera i{
   font-size: 2rem;
   cursor: pointer;
   margin: 30px;
@@ -25,7 +21,7 @@
   font-weight: bold;
 }
 
-#cabecera i:hover > .buy-card{
+.cabecera i:hover > .buy-card{
   width: 400px;
   height: 400px;
   position: absolute;
@@ -34,7 +30,7 @@
   border: solid 1px black;
 }
 
-#cabecera i:hover .nav-card{
+.cabecera i:hover .nav-card{
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -42,7 +38,7 @@
   border-bottom: solid thin #e1e1e1;
 }
 
-#cabecera i:hover .buy-card > button{
+.cabecera i:hover .buy-card > button{
   display: block;
   width: 90%;
   padding: 10px;
@@ -53,7 +49,7 @@
   cursor: pointer;
 }
 
-#cabecera i:hover .buy-card > button:hover {
+.cabecera i:hover .buy-card > button:hover {
   border: solid thin #494848;
   transition: all .4s;
 }
@@ -62,11 +58,11 @@
   display: none;
 }
 
-#cabecera i button {
+.cabecera i button {
   display: none;
 }
 
-#divisionCabecera {
+.divisionCabecera {
   width: 10%;
 }
 
@@ -74,10 +70,9 @@
 #logoImagen {
   width: 100%;
   height: auto;
-  /* Para mantener la proporción de la imagen */
 }
 
-/* Los links de la barra de navegacion de la cabecera los puse dentro de una lista (no estoy muy seguro*/
+/* Los links de la barra de navegacion de la cabecera los puse dentro de una lista*/
 #listaLinkBarra{
   display: flex;
   list-style: none;
@@ -85,7 +80,7 @@
   margin-top: 50px;
 }
 
-#barraNave{
+.barraNave{
   height: 100%;
   width: 100%;
   justify-content:space-between;
@@ -99,39 +94,39 @@
 }
 
 /*Acomodar los elementos del carrito*/
-.lista_de_cursos{
+.lista_de_prendas div{
   display: none;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 40px;
   border-top: solid thin gray;
 }
 
-#cabecera i:hover .buy-card > .lista_de_cursos{
+.cabecera i:hover .buy-card > .lista_de_prendas div{
   display: flex;
 }
 
-.lista_de_cursos img {
+.lista_de_prendas img {
   width: 90px;
 }
 
-.lista_de_cursos p {
+.lista_de_prendas p {
   width: 100px;
-  font-size: 1rem; 
+  font-size: 12px; 
 }
 /* selecciono de lista_de_cursos a su hijo num entre () */
-.lista_de_cursos p:nth-child(4){
+.lista_de_prendas p:nth-child(2){
+  padding-left: 10px;
+}
+
+.lista_de_prendas p:nth-child(3){
+  padding-left: 10px;
+}
+
+.lista_de_prendas p:nth-child(4){
   padding-left: 50px;
 }
 
-.lista_de_cursos p:nth-child(2){
-  padding-left: 10px;
-}
-
-.lista_de_cursos p:nth-child(3){
-  padding-left: 10px;
-}
-
-.lista_de_cursos p:last-child span {
+.lista_de_prendas p:last-child span {
   background-color: red;
   border-radius: 50%;
   padding: 5px;
@@ -182,7 +177,9 @@
 }
 
 .info {
-    padding: 10px;
+    padding: 5px;
+    display: grid;
+    place-items: center;
 }
 
 .info h3 {
@@ -198,13 +195,29 @@
     color: #222;
     margin-bottom: 8px;
 }
-.precio p:first-child {
+
+.info a {
+  display: flex;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 5px 5px ;
+  justify-content: center;
+  color: #fff;
+}
+
+.info a:hover{
+  background-color: rgb(0, 0, 0);
+  transition: all .3s;
+}
+.info p:nth-child(3) {
     text-decoration: line-through;
 }
 
 .precio {
     display: flex;
-    justify-content: space-between;
     font-weight: bolder;
 }
 .precio p {
@@ -213,8 +226,8 @@
 
 .info button{
     padding: 3px;
-    width: 100%;
-    background-color: red;
+    width: 50%;
+    background-color: rgb(46, 45, 45);
     border: none;
     outline: none;
     color: white;
@@ -224,7 +237,7 @@
     cursor: pointer;
 }   
 .info button:hover{
-    background-color: rgb(145, 3, 3);
+    background-color: black;
     transition: all .3s;
 }
 /* Estilos para el footer */
@@ -300,3 +313,21 @@ iframe {
 h3 {
   font-family: montserrat;
 }
+
+/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
+            pagina de productos pero no me salio,  sigue en css 
+
+.container{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.cajaColor{
+    background-image: linear-gradient(to top,blue 0%, pink 100%);
+    grid-column: 2/6;
+    grid-row: 2/7;
+} */
