@@ -240,18 +240,8 @@
     background-color: black;
     transition: all .3s;
 }
-
-/* Da formato al mapas de Contacto */
-iframe {
-  display: flex;
-  width: 100%;
-}
-
-h3 {
-  font-family: montserrat;
-}
-
 /* Estilos para el footer */
+
 #footer {
   font-family: montserrat;
   background-color: rosybrown;
@@ -314,3 +304,30 @@ h3 {
   padding-top: 10px;
   margin-left: 0%;
 }
+/* Da formato al mapas de Contacto */
+iframe {
+  display: flex;
+  width: 100%;
+}
+
+h3 {
+  font-family: montserrat;
+}
+
+/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
+            pagina de productos pero no me salio,  sigue en css 
+
+.container{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.cajaColor{
+    background-image: linear-gradient(to top,blue 0%, pink 100%);
+    grid-column: 2/6;
+    grid-row: 2/7;
+} */
