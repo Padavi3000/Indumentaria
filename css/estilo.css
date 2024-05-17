@@ -227,19 +227,70 @@
     background-color: rgb(145, 3, 3);
     transition: all .3s;
 }
-/* El Pie de pagina es comun a todas, (contiene 3 links) */
+/* Estilos para el footer */
+
 #footer {
-  border: 2px solid rosybrown;
-}
-
-/* Link que posee el pie de pagina en su interior */
-.linkFooter {
-  color: royalblue;
   font-family: montserrat;
+  background-color: rosybrown;
+  padding: 20px 0;
 }
 
-/* Da formato a las fotos de las prendas del cuerpo principal y a las prendas de promociones */
+.footer-links {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
 
+.contact-info {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.social-media {
+  float: left;
+  width: 30%;
+}
+
+.footer-links ul,
+.contact-info ul,
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.contact-info ul li,
+.social-media ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links h3,
+.contact-info h3,
+.social-media h3 {
+  margin-top: 0;
+}
+
+.footer-links a,
+.contact-info a,
+.social-media a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover,
+.contact-info a:hover,
+.social-media a:hover {
+  color: whitesmoke;
+}
+
+/* Estilos para la sección de copyright */
+.copyright {
+  clear: both;
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 0%;
+}
 /* Da formato al mapas de Contacto */
 iframe {
   display: flex;
@@ -249,21 +300,3 @@ iframe {
 h3 {
   font-family: montserrat;
 }
-
-/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
-            pagina de productos pero no me salio,  sigue en css 
-
-.container{
-    height: 50%;
-    width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(8,1fr);
-}
-
-.cajaColor{
-    background-image: linear-gradient(to top,blue 0%, pink 100%);
-    grid-column: 2/6;
-    grid-row: 2/7;
-} */
