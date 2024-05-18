@@ -10,11 +10,59 @@
 
 <body>
 
-    <header>
-        <h1>Preguntas Frecuentes</h1>
+    <header class="cabecera">
+
+        <!-- Logo de la tienda -->
+        <div class="divisionCabecera">
+            <a href="index.html" id="linkImagenCabecera">
+                <img id="logoImagen" src="img/logos/Logo.png" alt="Logo / Marca">
+            </a>
+        </div>
+
+        <!-- Barra de navegacion -->
+        <nav class="barraNave">
+            <ul id="listaLinkBarra">
+                <li>
+                    <a class="linkCabecera" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="abrigos.html">Abrigos</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="pantalones.html">Pantalones</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="remeras.html">Remeras</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="vestidos.html">Vestidos</a>
+                </li>
+                <li>
+                    <a class="linkCabecera" href="contacto2.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor del carrito -->
+        <div id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_prendas">
+                    </div>
+                    <button id="vaciar_carrito">Vaciar Carrito</button>
+                </div>
+            </i>
+        </div>
     </header>
 
     <main>
+        <h1 class="tituloMain">Preguntas Frecuentes</h1>
         <section>
             <h2>¿Cuáles son los métodos de pago aceptados?</h2>
             <p>Aceptamos pagos con tarjeta de crédito, tarjeta de débito y PayPal. También ofrecemos la opción de pago contra reembolso para algunos pedidos.</p>
@@ -29,23 +77,43 @@
             <h2>¿Cómo puedo realizar un seguimiento de mi pedido?</h2>
             <p>Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un enlace de seguimiento. También puedes iniciar sesión en tu cuenta para ver el estado de tu pedido en cualquier momento.</p>
         </section>
+        <br>
+        <br>
 
         <!-- Agrega más preguntas y respuestas según sea necesario -->
 
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <!-- Otras secciones del pie de página -->
-            <div class="footer-links">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <!-- Otros enlaces útiles -->
-                </ul>
-            </div>
+    <footer id="footer">        
+        <div class="footer-links">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="politica_privacidad.html">Política de privacidad</a></li>
+                <li><a href="terminos_condiciones.html">Términos y condiciones</a></li>
+                <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="envios_devoluciones.html">Envíos y devoluciones</a></li>
+                <li><a href="contacto2.html">Contacto</a></li>
+            </ul>
         </div>
-        <p>&copy; 2024 Clothes Fresh. Todos los derechos reservados.</p>
-    </footer>
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@clothesfresh.com">info@clothesfresh.com</a></li>
+                <li><strong>Teléfono:</strong> +1234567890</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/clothesfresh" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/clothesfresh" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/clothesfresh" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Clothes Fresh. Todos los derechos reservados.</p>
+        </div>
+    </footer>    
     
 
 </body>
