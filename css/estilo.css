@@ -331,52 +331,70 @@ h3 {
     grid-row: 2/7;
 } */
 
- /* Estilos para pantallas más pequeñas (móviles y tablets) */
+/* Estilos para pantallas celulares  */
 @media screen and (max-width: 768px) {
-  .cabecera {
-    flex-direction: column;
-    align-items: center;
+    .cabecera {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .barraNave,
+    #carrito {
+      margin-top: 20px;
+    }
+  
+    .seccionProductos {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: auto;
+    }
+  
+    .divisionProductos {
+      margin-bottom: 30px;
+    }
   }
-
-  .barraNave {
-    margin-top: 20px;
+  
+  /* Estilos para pantallas tablets */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cabecera {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .barraNave,
+    #carrito {
+      margin-top: 0;
+    }
+  
+    .seccionProductos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 500px;
+    }
+  
+    .divisionProductos {
+      margin-bottom: 20px;
+    }
   }
-
-  #carrito {
-    margin-top: 20px;
+  
+  /* Estilos para pantallas monitores */
+  @media screen and (min-width: 1025px) {
+    .cabecera {
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .barraNave,
+    #carrito {
+      margin-top: 0;
+    }
+  
+    .seccionProductos {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 650px;
+    }
+  
+    .divisionProductos {
+      margin-bottom: 0;
+    }
   }
-
-  .seccionProductos {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: auto;
-  }
-
-  .divisionProductos {
-    margin-bottom: 30px;
-  }
-}
-
-/* Estilos para pantallas más grandes (escritorios) */
-@media screen and (min-width: 769px) {
-  .cabecera {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .barraNave {
-    margin-top: 0;
-  }
-
-  #carrito {
-    margin-top: 0;
-  }
-
-  .seccionProductos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 650px;
-  }
-
-  .divisionProductos {
-    margin-bottom: 0;
-  }
-}
+  
