@@ -140,8 +140,7 @@
 
 /* Animacion que esta entre la cabecera y el cuerpo principal (solo en el index) */
 #animacion {
-  width: 100%;
-  height: 500px;
+  width: 100%;  
   /* Para mantener la proporción de la imagen */
 }
 
