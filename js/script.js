@@ -1,8 +1,8 @@
 // Variables
-const   carrito = document.getElementById('carrito'),
-        listaPrendas = document.getElementById('lista-prendas'),
-        contenedorCarrito = document.querySelector('.buy-card .lista_de_prendas'),
-        vaciarCarritoBtn = document.querySelector('#vaciar_carrito');
+const carrito = document.getElementById('carrito'),
+    listaPrendas = document.getElementById('lista-prendas'),
+    contenedorCarrito = document.querySelector('.buy-card .lista_de_prendas'),
+    vaciarCarritoBtn = document.querySelector('#vaciar_carrito');
 
 let articulosCarrito = [];
 
@@ -29,8 +29,8 @@ function registrarEventsListeners() {
 //AGREGAR PRENDAS DEL CARRITO
 function agregarPrenda(e) {
     if (e.target.classList.contains("agregar-carrito")) {
-       const prendaSeleccionada = e.target.parentElement.parentElement;
-       leerInfo(prendaSeleccionada)
+        const prendaSeleccionada = e.target.parentElement.parentElement;
+        leerInfo(prendaSeleccionada)
     }
 }
 
@@ -48,27 +48,27 @@ function eliminarPrenda(e) {
 function leerInfo(prenda) {
     //crear objeto con el contenido e la foto actual
     const infoPrenda = {
-        imagen : prenda.querySelector('img').src,
-        titulo : prenda.querySelector('h3').textContent,
-        precio : prenda.querySelector('.descuento').textContent,
-        id : prenda.querySelector('button').getAttribute('data-id'),
-        cantidad : 1
+        imagen: prenda.querySelector('img').src,
+        titulo: prenda.querySelector('h3').textContent,
+        precio: prenda.querySelector('.descuento').textContent,
+        id: prenda.querySelector('button').getAttribute('data-id'),
+        cantidad: 1
     }
     // console.log(infoPrenda)
     //Revisa si un elemento ya existe en el carrito
     const existe = articulosCarrito.some(prenda => prenda.id === infoPrenda.id)
     //console.log(existe)
-    if(existe) {
+    if (existe) {
         //ACTUALIZAR LA CANTIDAD DE PRENDAS
         const prendas = articulosCarrito.map(prenda => {
-            if(prenda.id === infoPrenda.id) {
+            if (prenda.id === infoPrenda.id) {
                 prenda.cantidad++;
                 return prenda
             } else {
                 return prenda;
             }
         });
-        [...articulosCarrito,infoPrenda]
+        [...articulosCarrito, infoPrenda]
     } else {
         //agregamos articulos al carrito
         articulosCarrito = [...articulosCarrito, infoPrenda]
@@ -102,9 +102,9 @@ function sincronizarLocalStorage() {
 }
 
 //elimina las prendas de la lista_de_prendas
-function limpiarHTML(){
+function limpiarHTML() {
     // console.log(contenedorCarrito.firstChild)
-    while(contenedorCarrito.firstChild){
+    while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)
     }
     sincronizarLocalStorage()
