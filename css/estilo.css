@@ -9,7 +9,7 @@
   font-family: montserrat;
 }
 
-.cabecera i {
+.apariencia {
   font-size: 2rem;
   cursor: pointer;
   margin: 30px;
@@ -21,7 +21,7 @@
   font-weight: bold;
 }
 
-.cabecera i:hover>.buy-card {
+.apariencia:hover>.buy-card {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -30,7 +30,7 @@
   border: solid 1px black;
 }
 
-.cabecera i:hover .nav-card {
+.apariencia:hover .nav-card {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
   border-bottom: solid thin #e1e1e1;
 }
 
-.cabecera i:hover .buy-card>button {
+.apariencia:hover .buy-card>button {
   display: block;
   width: 90%;
   padding: 10px;
@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-.cabecera i:hover .buy-card>button:hover {
+.apariencia:hover .buy-card>button:hover {
   border: solid thin #494848;
   transition: all .4s;
 }
@@ -58,7 +58,7 @@
   display: none;
 }
 
-.cabecera i button {
+.apariencia button {
   display: none;
 }
 
@@ -101,7 +101,7 @@
   border-top: solid thin gray;
 }
 
-.cabecera i:hover .buy-card>.lista_de_prendas div {
+.apariencia:hover .buy-card>.lista_de_prendas div {
   display: flex;
 }
 
@@ -250,7 +250,7 @@ p {
 #footer {
   font-family: montserrat;
   background-color: rosybrown;
-  padding: 20px 0;
+  padding: 20px 0 0 10px;
 }
 
 .footer-links {
@@ -319,24 +319,6 @@ iframe {
 h3 {
   font-family: montserrat;
 }
-
-/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
-            pagina de productos pero no me salio,  sigue en css 
-
-.container{
-    height: 50%;
-    width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(8,1fr);
-}
-
-.cajaColor{
-    background-image: linear-gradient(to top,blue 0%, pink 100%);
-    grid-column: 2/6;
-    grid-row: 2/7;
-} */
 
 /* Estilos para pantallas celulares  */
 @media screen and (max-width: 768px) {
