@@ -110,3 +110,42 @@ function limpiarHTML() {
     sincronizarLocalStorage()
 }
 
+
+//Formulario de contacto
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Campos
+    const fields = [
+        { id: 'nombre', value: document.getElementById('nombre').value, message: 'Por favor, introduce tu nombre.' },
+        { id: 'pedido', value: document.getElementById('pedido').value, message: 'Por favor, introduce tu número de pedido.' },
+        { id: 'servicio', value: document.getElementById('servicio').value, message: 'Por favor, selecciona un servicio.' },
+        { id: 'correo', value: document.getElementById('correo').value, message: 'Por favor, introduce tu correo electrónico.' },
+        { id: 'mensaje', value: document.getElementById('mensaje').value, message: 'Por favor, introduce tu mensaje.' },
+        { id: 'imagen', value: document.getElementById('imagen').files.length > 0, message: 'Por favor, selecciona una imagen.' }
+    ];
+    
+    // Verifica si selecciona una sucursal
+    const sucursal = document.querySelector('input[name="sucursal"]:checked');
+    if (!sucursal) {
+        alert('Por favor, selecciona una sucursal.');
+        return;
+    }
+
+    // Alertas y campos vacíos
+    const showAlert = (message, field) => {
+        alert(message);
+        document.getElementById(field).focus();
+    };
+
+    // Verifica si los campos están completos
+    for (let field of fields) {
+        if (!field.value) {
+            showAlert(field.message, field.id);
+            return;
+        }
+    }
+
+    // Si está completo, enviar formulario
+    this.submit();
+});
