@@ -230,7 +230,7 @@ p {
   transition: all .3s;
 }
 
-.info p:nth-child(3) {
+.tachado {
   text-decoration: line-through;
 }
 
