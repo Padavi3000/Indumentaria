@@ -177,22 +177,38 @@ p {
   border-radius: 5px;
 }
 
+.contenedorFotos {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  float: left;
+ }
+  /*aquí te agregue el efecto de transición en 0.3segundos*/
+ .contenedorFotos img {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+ }
+ /*y con hover detectamos si el puntero de mouse esta por encima*/
+ .contenedorFotos img.arriba:hover {
+  opacity: 0;
+ }
+
 .info {
   padding: 5px;
   display: grid;
   place-items: center;
+  position: static;
 }
 
 .info h3 {
   font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .info p {
   font-size: 17px;
-}
-
-.info h3,
-.info p {
   color: #222;
   margin-bottom: 8px;
 }
