@@ -9,19 +9,19 @@
   font-family: montserrat;
 }
 
-.cabecera i{
+.apariencia {
   font-size: 2rem;
   cursor: pointer;
   margin: 30px;
 }
 
-.nav-card li{
+.nav-card li {
   list-style: none;
   padding: 10px;
   font-weight: bold;
 }
 
-.cabecera i:hover > .buy-card{
+.apariencia:hover>.buy-card {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -30,7 +30,7 @@
   border: solid 1px black;
 }
 
-.cabecera i:hover .nav-card{
+.apariencia:hover .nav-card {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
   border-bottom: solid thin #e1e1e1;
 }
 
-.cabecera i:hover .buy-card > button{
+.apariencia:hover .buy-card>button {
   display: block;
   width: 90%;
   padding: 10px;
@@ -49,16 +49,16 @@
   cursor: pointer;
 }
 
-.cabecera i:hover .buy-card > button:hover {
+.apariencia:hover .buy-card>button:hover {
   border: solid thin #494848;
   transition: all .4s;
 }
 
-.nav-card{
+.nav-card {
   display: none;
 }
 
-.cabecera i button {
+.apariencia button {
   display: none;
 }
 
@@ -73,17 +73,17 @@
 }
 
 /* Los links de la barra de navegacion de la cabecera los puse dentro de una lista*/
-#listaLinkBarra{
+#listaLinkBarra {
   display: flex;
   list-style: none;
   justify-content: center;
   margin-top: 50px;
 }
 
-.barraNave{
+.barraNave {
   height: 100%;
   width: 100%;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 /* Cada uno de los link que posee la barra de navegacion de la cabecera */
@@ -94,14 +94,14 @@
 }
 
 /*Acomodar los elementos del carrito*/
-.lista_de_prendas div{
+.lista_de_prendas div {
   display: none;
   text-align: center;
   padding: 20px 0 0 40px;
   border-top: solid thin gray;
 }
 
-.cabecera i:hover .buy-card > .lista_de_prendas div{
+.apariencia:hover .buy-card>.lista_de_prendas div {
   display: flex;
 }
 
@@ -111,18 +111,19 @@
 
 .lista_de_prendas p {
   width: 100px;
-  font-size: 12px; 
+  font-size: 12px;
 }
+
 /* selecciono de lista_de_cursos a su hijo num entre () */
-.lista_de_prendas p:nth-child(2){
+.lista_de_prendas p:nth-child(2) {
   padding-left: 10px;
 }
 
-.lista_de_prendas p:nth-child(3){
+.lista_de_prendas p:nth-child(3) {
   padding-left: 10px;
 }
 
-.lista_de_prendas p:nth-child(4){
+.lista_de_prendas p:nth-child(4) {
   padding-left: 50px;
 }
 
@@ -134,14 +135,14 @@
   color: #fff;
 }
 
-.divisionProductos h3, p{
+.divisionProductos h3,
+p {
   text-align: center;
 }
 
 /* Animacion que esta entre la cabecera y el cuerpo principal (solo en el index) */
 #animacion {
   width: 100%;
-  height: 500px;
   /* Para mantener la proporción de la imagen */
 }
 
@@ -172,28 +173,44 @@
 
 .divisionProductos {
   background-color: rgb(185, 152, 136);
-  border: 1px solid black ;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
+.contenedorFotos {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  float: left;
+ }
+  /*aquí te agregue el efecto de transición en 0.3segundos*/
+ .contenedorFotos img {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+ }
+ /*y con hover detectamos si el puntero de mouse esta por encima*/
+ .contenedorFotos img.arriba:hover {
+  opacity: 0;
+ }
+
 .info {
-    padding: 5px;
-    display: grid;
-    place-items: center;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  position: static;
 }
 
 .info h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .info p {
-    font-size: 17px;
-}
-
-.info h3,
-.info p{
-    color: #222;
-    margin-bottom: 8px;
+  font-size: 17px;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .info a {
@@ -203,49 +220,53 @@
   text-decoration: none;
   background-color: #222;
   border-radius: 10px;
-  padding: 5px 5px ;
+  padding: 5px 5px;
   justify-content: center;
   color: #fff;
 }
 
-.info a:hover{
+.info a:hover {
   background-color: rgb(0, 0, 0);
   transition: all .3s;
 }
+
 .info p:nth-child(3) {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .precio {
-    display: flex;
-    font-weight: bolder;
-}
-.precio p {
-    font-size: 20px;
+  display: flex;
+  font-weight: bolder;
 }
 
-.info button{
-    padding: 3px;
-    width: 50%;
-    background-color: rgb(46, 45, 45);
-    border: none;
-    outline: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}   
-.info button:hover{
-    background-color: black;
-    transition: all .3s;
+.precio p {
+  font-size: 20px;
 }
+
+.info button {
+  padding: 3px;
+  width: 50%;
+  background-color: rgb(46, 45, 45);
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: black;
+  transition: all .3s;
+}
+
 /* Estilos para el footer */
 
 #footer {
   font-family: montserrat;
   background-color: rosybrown;
-  padding: 20px 0;
+  padding: 20px 0 0 10px;
 }
 
 .footer-links {
@@ -304,6 +325,7 @@
   padding-top: 10px;
   margin-left: 0%;
 }
+
 /* Da formato al mapas de Contacto */
 iframe {
   display: flex;
@@ -314,20 +336,69 @@ h3 {
   font-family: montserrat;
 }
 
-/* aca intente hacer una caja para poner en cada foto y desde ahi ir a la 
-            pagina de productos pero no me salio,  sigue en css 
+/* Estilos para pantallas celulares  */
+@media screen and (max-width: 768px) {
+  .cabecera {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.container{
-    height: 50%;
-    width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(8,1fr);
+  .barraNave,
+  #carrito {
+    margin-top: 20px;
+  }
+
+  .seccionProductos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .divisionProductos {
+    margin-bottom: 30px;
+  }
 }
 
-.cajaColor{
-    background-image: linear-gradient(to top,blue 0%, pink 100%);
-    grid-column: 2/6;
-    grid-row: 2/7;
-} */
+/* Estilos para pantallas tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cabecera {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .barraNave,
+  #carrito {
+    margin-top: 0;
+  }
+
+  .seccionProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+  }
+
+  .divisionProductos {
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para pantallas monitores */
+@media screen and (min-width: 1025px) {
+  .cabecera {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .barraNave,
+  #carrito {
+    margin-top: 0;
+  }
+
+  .seccionProductos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 650px;
+  }
+
+  .divisionProductos {
+    margin-bottom: 0;
+  }
+}

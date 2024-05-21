@@ -8,14 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothes Fresh</title>
+
+    <!-- Favicom -->
+    <link rel="icon" href="./img/logos/Logo.png" type="image/png">
+
+    <!--Open Grahp Data -->
+    <meta property="og:title" content="Venta Indumentaria">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://padavi3000.github.io/Indumentaria/">
+    <meta property="og:description" content="Esta pagina es unsitio de venta de indumentaria">
+    <!--Fin de Open Grahp Data -->
+
     <link rel="stylesheet" href="css/estilo.css">
     <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
-    <!-- Enlace al archivo de estilos para el footer -->
-    <link rel="stylesheet" href="css/estilos_footer.css">
 </head>
 
 <body>
- 
+
     <!-- Cabecera de la pagina, (incluye el logo y la barra de navegacion) -->
     <header class="cabecera">
 
@@ -45,13 +54,13 @@
                     <a class="linkCabecera" href="vestidos.html">Vestidos</a>
                 </li>
                 <li>
-                    <a class="linkCabecera" href="contacto.html">Contacto</a>
+                    <a class="linkCabecera" href="contacto2.html">Contacto</a>
                 </li>
             </ul>
         </nav>
         <!-- Contenedor del carrito -->
         <div id="carrito">
-            <i class="fa-solid fa-cart-shopping">
+            <div class="fa-solid fa-cart-shopping apariencia">
                 <div class="buy-card">
                     <ul class="nav-card">
                         <li>Imagen</li>
@@ -64,14 +73,14 @@
                     </div>
                     <button id="vaciar_carrito">Vaciar Carrito</button>
                 </div>
-            </i>
+            </div>
         </div>
     </header>
     <!-- fin del header y barra de navegacion -->
 
     <!-- Animacion / Foto  -->
     <div>
-        <img id="animacion" src="img/logos/Banner horizontal.png" alt="animacion">
+        <img id="animacion" src="img/logos/Banner_horizontal2.png" alt="animacion">
     </div>
     <!-- fin Animacion / Foto -->
 
@@ -80,104 +89,118 @@
         <h1 class="tituloMain"> PRODUCTOS </h1>
         <section class="seccionProductos" id="lista-prendas">
             <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/remeras/Remera.jpg" alt="Vestidos" title="Vestidos">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/remeras/Remera.jpg" alt="Remera" title="Remera">
+                    <img class="fotoPrenda arriba" src="img/remeras/remera1.jpeg" alt="">
+                </div>
                 <div class="info">
                     <h3>Remeras</h3>
                     <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
-                    <p>Tenemos los mejores precios</p>
-                    <a href="vestidos.html">Ver Mas</a>
-                </div>
-            </div>
-            <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/abrigos/Abrigo.jpg" alt="Abrigos" title="Abrigos">
-                <div class="info">
-                    <h3>Abrigos</h3>
-                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
-                    <p>Tenemos los mejores precios</p>
-                    <a href="abrigos.html">Ver Mas</a>
-                </div>
-            </div>
-            <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/accesorios/accesorios.jpg" alt="Calzados" title="Calzados">
-                <div class="info">
-                    <h3>Accesorios</h3>
-                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
-                    <p>Tenemos los mejores precios</p>
-                    <a href="calzados.html">Ver mas</a>
-                </div>
-            </div>
-            <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/pantalones/Pantalon.jpg" alt="Remeras" title="Remeras">
-                <div class="info">
-                    <h3>Pantalones</h3>
-                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
                     <p>Tenemos los mejores precios</p>
                     <a href="remeras.html">Ver Mas</a>
                 </div>
             </div>
             <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/vestidos/vestido1.jpeg" alt="Pantalones" title="Pantalones">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/abrigos/Abrigo.jpg" alt="Abrigos" title="Abrigos">
+                    <img class="fotoPrenda arriba" src="img/abrigos/abrigo2.jpeg" alt="">
+                </div>
                 <div class="info">
-                    <h3>Vestidos</h3>
+                    <h3>Abrigos</h3>
                     <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
                     <p>Tenemos los mejores precios</p>
+                    <a href="abrigos.html">Ver Mas</a>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/accesorios/accesorios1.jpeg" alt="Accesorios" title="Accesorios">
+                    <img class="fotoPrenda arriba" src="img/accesorios/accesorios2.jpeg" alt="Accesorios" title="Accesorios">
+                </div>
+                <div class="info">
+                    <h3>Accesorios</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <p></p>
+                    <a href="accesorios.html">Ver mas</a>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/pantalones/Pantalon.jpg" alt="Pantalones" title="Pantalones">
+                    <img class="fotoPrenda arriba" src="img/pantalones/pantalon1.jpeg" alt="Accesorios" title="Accesorios">
+                </div>
+                <div class="info">
+                    <h3>Pantalones</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <p></p>
                     <a href="pantalones.html">Ver Mas</a>
                 </div>
             </div>
             <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/calzados/calzado1.jpg" alt="Acesorios" title="Acesorios">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/vestidos/vestido1.jpeg" alt="Vestidos" title="Vestidos">
+                    <img class="fotoPrenda arriba" src="img/vestidos/vestido2.jpeg" alt="Accesorios" title="Accesorios">
+                </div>
+                <div class="info">
+                    <h3>Vestidos</h3>
+                    <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
+                    <p>Tenemos los mejores precios</p>
+                    <p></p>
+                    <a href="vestidos.html">Ver Mas</a>
+                </div>
+            </div>
+            <div class="divisionProductos">
+                <div class="contenedorFotos">
+                    <img class="fotoPrenda" src="img/calzados/calzado1.jpg" alt="Calzado" title="Calzado">
+                    <img class="fotoPrenda arriba" src="img/calzados/calzado2.jpg" alt="Accesorios" title="Accesorios">
+                </div>
                 <div class="info">
                     <h3>Calzados</h3>
                     <p>Tenemos las mejores remeras elegi la que mas te guste!</p>
-                    <p></p>
                     <p>Tenemos los mejores precios</p>
-                    <a href="accesorios.html">Ver Mas</a>
+                    <p></p>
+                    <a href="calzados.html">Ver Mas</a>
                 </div>
             </div>
+        </section>
     </main>
     <!-- fin Cuerpo Index -->
-    
+
     <!--opción de footer-->
     <footer id="footer">
-        
-        <div class="container">
-            <div class="footer-links">
-                <h3>Enlaces útiles</h3>
-                <ul>
-                    <li><a href="politica_privacidad.html">Política de privacidad</a></li>
-                    <li><a href="terminos_condiciones.html">Términos y condiciones</a></li>
-                    <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="envios_devoluciones.html">Envíos y devoluciones</a></li>
-                    <li><a href="contacto2.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Información de contacto</h3>
-                <p><strong>Email:</strong> <a href="mailto:info@clothesfresh.com">info@clothesfresh.com</a></p>
-                <p><strong>Teléfono:</strong> +1234567890</p>
-            </div>
-
-
-            <div class="social-media">
-                <h3>Síguenos en redes sociales</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/clothesfresh" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/clothesfresh" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/clothesfresh" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
+        <div class="footer-links">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="politica_privacidad.html">Política de privacidad</a></li>
+                <li><a href="terminos_condiciones.html">Términos y condiciones</a></li>
+                <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="envios_devoluciones.html">Envíos y devoluciones</a></li>
+                <li><a href="contacto2.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@clothesfresh.com">info@clothesfresh.com</a></li>
+                <li><strong>Teléfono:</strong> +1234567890</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/clothesfresh" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/clothesfresh" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/clothesfresh" target="_blank">Instagram</a></li>
+            </ul>
         </div>
         <div class="copyright">
             <p>&copy; 2024 Clothes Fresh. Todos los derechos reservados.</p>
         </div>
     </footer>
     <!-- Fin del Footer -->
-    
+
     <script src="js/script.js"></script>
 </body>
 

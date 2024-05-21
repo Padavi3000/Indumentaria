@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda_de_Moda</title>
+
+    <!-- Favicom -->
+    <link rel="icon" href="./img/logos/Logo.png" type="image/png">
+
+    <!--Open Graph Data -->
+    <meta property="og:title" content="Venta Indumentaria">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://padavi3000.github.io/Indumentaria/">
+    <meta property="og:description" content="Esta pagina es unsitio de venta de indumentaria">
+    <!--Fin de Open Grahp Data -->
+
+    <title>Clothes Fresh</title>
     <link rel="stylesheet" href="css/estilo.css">
     <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
 </head>
@@ -39,13 +50,13 @@
                     <a class="linkCabecera" href="vestidos.html">Vestidos</a>
                 </li>
                 <li>
-                    <a class="linkCabecera" href="contacto.html">Contacto</a>
+                    <a class="linkCabecera" href="contacto2.html">Contacto</a>
                 </li>
             </ul>
         </nav>
         <!-- Contenedor del carrito -->
         <div id="carrito">
-            <i class="fa-solid fa-cart-shopping">
+            <div class="fa-solid fa-cart-shopping apariencia">
                 <div class="buy-card">
                     <ul class="nav-card">
                         <li>Imagen</li>
@@ -58,7 +69,7 @@
                     </div>
                     <button id="vaciar_carrito">Vaciar Carrito</button>
                 </div>
-            </i>
+            </div>
         </div>
     </header>
     <!-- fin del header y barra de navegacion -->
@@ -138,7 +149,7 @@
                 </div>
             </div>
             <div class="divisionProductos">
-                <img class="fotoPrenda" src="img/pantalones/Pantalon.jpg" alt="Acesorios" title="Acesorios">
+                <img class="fotoPrenda" src="img/pantalones/pantalon5.jfif" alt="Acesorios" title="Acesorios">
                 <div class="info">
                     <h3>Pantalon 6</h3>
                     <p>Precio Anterior:</p>
@@ -151,23 +162,40 @@
                     <button class="agregar-carrito" data-id="6">Añadir al Carrito</button>
                 </div>
             </div>
- 
+        </section>
     </main>
     <!-- fin Cuerpo Index -->
 
-    <!-- Comienzo del Footer -->
+    <!--opción de footer-->
     <footer id="footer">
-        <ul id="listaLinkFooter">
-            <li>
-                <a class="linkFooter" href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
-            </li>
-            <li>
-                <a class="linkFooter" href="preguntas.html">Preguntas Frecuentes</a>
-            </li>
-            <li>
-                <a class="linkFooter" href="contacto.html">Como Llegar</a>
-            </li>
-        </ul>
+        <div class="footer-links">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="politica_privacidad.html">Política de privacidad</a></li>
+                <li><a href="terminos_condiciones.html">Términos y condiciones</a></li>
+                <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="envios_devoluciones.html">Envíos y devoluciones</a></li>
+                <li><a href="contacto2.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@clothesfresh.com">info@clothesfresh.com</a></li>
+                <li><strong>Teléfono:</strong> +1234567890</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/clothesfresh" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/clothesfresh" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/clothesfresh" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Clothes Fresh. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <!-- Fin del Footer -->
     <script src="js/script.js"></script>
