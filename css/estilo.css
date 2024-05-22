@@ -349,10 +349,10 @@ h3 {
     margin-top: 20px;
   }
    
-  #listaLinkBarra {
+  .linkCabecera{
     font-size: 12px;
   }
-  
+
   .seccionProductos {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
