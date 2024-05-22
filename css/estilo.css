@@ -91,6 +91,7 @@
   background: rosybrown;
   color: white;
   padding: 10px;
+  text-decoration: none;
 }
 
 /*Acomodar los elementos del carrito*/
@@ -347,6 +348,10 @@ h3 {
   #carrito {
     margin-top: 20px;
   }
+   
+  #listaLinkBarra {
+    font-size: 12px;
+  }
 
   .seccionProductos {
     grid-template-columns: repeat(1, 1fr);
@@ -370,11 +375,7 @@ h3 {
   #carrito {
     margin-top: 0;
   }
-  #listaLinkBarra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .seccionProductos {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 500px;
