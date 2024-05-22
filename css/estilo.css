@@ -350,19 +350,9 @@ h3 {
   }
    
   #listaLinkBarra {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    flex-direction: column;
-    align-items: center;
-    background: rosybrown;
+    font-size: 12px;
   }
-
-  .navItems{
-    padding: 10px;
-  }
-
+  
   .seccionProductos {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
