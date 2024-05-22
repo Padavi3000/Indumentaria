@@ -97,16 +97,19 @@
         </section>
         <br>
          <section id="formularioContacto">        
-            <h2>Formulario de contacto:</h2>
+            <h2 id="TituloFormContacto">Formulario de contacto:</h2>
+            <br>
             <form id="contactForm" action="" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="pedido">Número de pedido:</label>
                     <input type="number" id="pedido" name="pedido" required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="sucursal">Sucursal:</label>
                     <div class="sucursal-options">
@@ -120,6 +123,7 @@
                         <label for="sucursal3">Sucursal#3</label>
                     </div>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="servicio">Servicio:</label>
                     <select id="servicio" name="servicio" required>
@@ -129,18 +133,22 @@
                         <option value="servicio3">Consulta</option>
                     </select>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="correo">Correo electrónico:</label>
                     <input type="email" id="correo" name="correo" required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                 </div>
+                <br>
                 <div class="form-group">
-                    <label for="imagen">Imagen:</label>
+                    <label for="imagen">Imagen:</label>                    
                     <input type="file" id="imagen" name="imagen" accept="image/*" required>
                 </div>
+                <br>
                 <button type="submit">Enviar mensaje</button>
             </form>
         </section>
