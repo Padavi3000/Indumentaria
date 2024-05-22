@@ -112,8 +112,8 @@ function limpiarHTML() {
 
 
 //Formulario de contacto
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
     // Campos
     const fields = [
@@ -124,7 +124,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         { id: 'mensaje', value: document.getElementById('mensaje').value, message: 'Por favor, introduce tu mensaje.' },
         { id: 'imagen', value: document.getElementById('imagen').files.length > 0, message: 'Por favor, selecciona una imagen.' }
     ];
-    
+
     // Verifica si selecciona una sucursal
     const sucursal = document.querySelector('input[name="sucursal"]:checked');
     if (!sucursal) {
@@ -146,6 +146,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         }
     }
 
-    // Si está completo, enviar formulario
+    // Si está completo, enviar formulario       
     this.submit();
-});
+}); 

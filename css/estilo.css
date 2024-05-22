@@ -327,6 +327,12 @@ p {
   margin-left: 0%;
 }
 
+/* Estilos Formulario de contacto */
+#TituloFormContacto{
+  color: red;
+  text-decoration: underline;
+}
+
 /* Da formato al mapas de Contacto */
 iframe {
   display: flex;
