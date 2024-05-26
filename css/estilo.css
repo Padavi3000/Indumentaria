@@ -183,17 +183,19 @@ p {
   width: 100%;
   height: 480px;
   float: left;
- }
-  /*aquí te agregue el efecto de transición en 0.3segundos*/
- .contenedorFotos img {
+}
+
+/*aquí te agregue el efecto de transición en 0.3segundos*/
+.contenedorFotos img {
   position: absolute;
   left: 0;
   transition: opacity 0.3s ease-in-out;
- }
- /*y con hover detectamos si el puntero de mouse esta por encima*/
- .contenedorFotos img.arriba:hover {
+}
+
+/*y con hover detectamos si el puntero de mouse esta por encima*/
+.contenedorFotos img.arriba:hover {
   opacity: 0;
- }
+}
 
 .info {
   padding: 5px;
@@ -263,7 +265,6 @@ p {
 }
 
 /* Estilos para el footer */
-
 #footer {
   font-family: montserrat;
   background-color: rosybrown;
@@ -328,7 +329,7 @@ p {
 }
 
 /* Estilos Formulario de contacto */
-#TituloFormContacto{
+#TituloFormContacto {
   color: red;
   text-decoration: underline;
 }
@@ -343,7 +344,7 @@ h3 {
   font-family: montserrat;
 }
 
-/* Estilos para pantallas celulares  */
+/* Estilos para pantallas celulares */
 @media screen and (max-width: 768px) {
   .cabecera {
     flex-direction: column;
@@ -354,8 +355,8 @@ h3 {
   #carrito {
     margin-top: 20px;
   }
-   
-  .linkCabecera{
+
+  .linkCabecera {
     font-size: 12px;
   }
 
